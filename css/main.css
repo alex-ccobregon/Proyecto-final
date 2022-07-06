@@ -1,0 +1,94 @@
+/*SECTOR BODY*/
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0;
+}
+.header{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img-logo{
+    width: 40px;
+}
+.linear-white::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.vh-50{
+    height: 50vmin;
+}
+/*SECTOR EXPERIENCE*/
+.card-img-filter{
+    filter: brightness(0.5);
+}
+.card{
+    transition-duration: .6s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.card-effect:hover .card{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.card-img-overlay{
+    transition-duration: .6s;
+}
+.card-effect:hover .card-img-overlay{
+    transform: scale(.9);
+}
+/*SECTOR COMMENTS*/
+.comments{
+    background-image: url(../img/bg-clients.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.comments.linear-white::after{
+    top: 0;
+}
+.comments__img{
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 /0.5);
+    border: 3px ridge #fff;
+}
+.transform-turn{
+    transform: rotate(0.5turn);
+}
+/*SECTOR ISPIRATION*/
+.media{
+    height: auto;
+}
+.media-object-img{
+    --tamano: 65px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+}
+/*CAROUSEL*/
+.carousel-weston-middle{
+    top: 35%;
+
+}
+.wallhaven{
+    color: rgb(114, 255, 86);
+}
+/*MEDIA QUERIES*/
+@media(max-width: 400px){
+    .vh-50{
+        height: 50vmax;
+    }
+}

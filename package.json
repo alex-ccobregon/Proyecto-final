@@ -1,0 +1,16 @@
+{
+  "author": "Alexis Ccoñislla",
+  "description": "Proyecto final",
+  "license": "MIT",
+  "name": "raiden-20704",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed scss/main.scss css/styles.css"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18",
+    "schematics-scss-migrate": "^1.3.15"
+  }
+}

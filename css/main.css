@@ -1,34 +1,3 @@
-/*SECTOR BODY*/
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    box-sizing: border-box;
-    min-height: 100%;
-    margin: 0;
-}
-.header{
-    background-image: url(../img/bg-header.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.img-logo{
-    width: 40px;
-}
-.linear-white::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 10px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.vh-50{
-    height: 50vmin;
-}
 /*SECTOR EXPERIENCE*/
 .card-img-filter{
     filter: brightness(0.5);
